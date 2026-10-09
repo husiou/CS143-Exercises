@@ -46,5 +46,5 @@ public class PerformanceAnalysis {
         double average = (double)(totalTime/trials);
         System.out.print(size + ":" + average);
         }
-    }
+    }       
 }

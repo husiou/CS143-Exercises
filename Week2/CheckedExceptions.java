@@ -12,6 +12,6 @@ public class CheckedExceptions {
         } catch(FileNotFoundException e) {
             System.out.println(" file does not exist");
         }
-
+        
     }
 }

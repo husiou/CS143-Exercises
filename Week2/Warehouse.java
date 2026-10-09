@@ -30,8 +30,9 @@ public class Warehouse {
      */
     public int receive(int itemCode, int itemCount) {
         int numFilled = 0;
+        int alreadyIn = stock(itemCode);
         for (int i = 0; i < warehouse.length; i++) {
-            if(numFilled == itemCount || numFilled + stock(itemCode) == limitPerItem) {
+            if(numFilled == itemCount || numFilled + alreadyIn == limitPerItem) {
                 break;
             }
 
