@@ -4,6 +4,11 @@
     Modified by TODO: Hugo Siou
 
     TODO: write a description of the Student.java class and your modifications here
+    - Constructor: threw IllegalArgumentException when values passed in weren't valid under our constraints (age < 13, non null name, valid major)
+    - increaseAge: threw IllegalArgumentException when increase wasn't positive
+    - changeMajor: looped through majors to check if major was valid, then threw IllegalArgumentException when major wasn't valid
+    - averageAge: tracked total age and total students, inside loop used try block to ensure students were non null, if they were
+    null then threw NullPointerException. 0 students = 0.0 return and other cases return total age / numStudents casted to double
  */
 public class Student {
     private String name;
